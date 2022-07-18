@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/all.css">
+
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <script src="./js/pace.js"></script>
+
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-container">
+          <div class="logo-container">
+              <h1 class="logo">Unah Cinemas</h1>
+          </div>
+          <div class="menu-container">
+              <ul class="menu-list">
+                  <li class="menu-list-item active"><a href="index.html">index</a></li>
+                  <li class="menu-list-item"><a href="movies.html">movies</a></li>
+                  <li class="menu-list-item"><a href="categories.html">categories</a></li>
+                  <li class="menu-list-item"><a href="upcoming.html">upcoming</a></li>
+                  <li class="menu-list-item"><a href= "feedback.html">feeback</a></li>
+
+              </ul>
+          </div>
+         
+      </div>
+  </div>
+  <!----odk--
+  <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('background.jfif');">
+                
+  </div>
+--->
+ 
+<div class="bg">
+  
+  <div class="holder">
+
+      <div class="contents">
+         <h1>Unah<span>Cinemas</span></h1>
+         <p>
+          Let's get in touch
+          I am open to any suggestion or lets just have a chat
+          Here’s our contact info.</p>
+      </div>
+
+      <div class="case">
+          <div class="contact-form">
+              <section>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <h2><Address></Address></h2>
+                  <p>TMaruapula. <br>
+                          Plot 9661 <br>                        Gaborone
+                  </p>
+              </section>
+  
+              <section>
+                  <i class="fa-solid fa-phone"></i>
+                  <h2>Phone</h2>
+                  <p>390 0061 <br>
+                      +267 75 242 326</p>
+              </section>
+  
+              <section>
+                  <i class="fa-solid fa-envelope"></i>
+                  <h2>email</h2>
+                  <p> onapreemotlhale@gmail.com</p>
+              </section>
+          </div>
+      </div>
+      <form>
+          <div class="form">
+              <div class="right">
+                  <div class="contact-form">
+                      <input type="text" required>
+                      <span>Full Name</span>
+                  </div>
+
+                  <div class="contact-form">
+                      <input type="E-mail" required>
+                      <span>E-mail</span>
+                  </div>
+
+                  <div class="contact-form">
+                      <textarea name="text"></textarea>
+                      <span>Type Your Name....</span>
+                  </div>
+
+                  <div class="contact-form">
+                      <input type="submit" name="submit">
+                  </div>
+              </div>
+          </div>
+      </form>
+      <div class="media">
+          <li><i class="fa-brands fa-facebook-f"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-youtube"></i></li>
+      </div>
+
+      <div class="empty"></div>
+  </div>
+
+    
+
+              
+
+  <script type="text/javascript">
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+
+    <!-- Bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- Lightbox -->
+    <script src="./js/fslightbox.js"></script>
+    <script>
+        fsLightboxInstances['gallery'].props.loadOnlyCurrentSource = true;
+    </script>
+    <!-- Load jQuery require for isotope -->
+    <script src="./js/jquery.min1.js"></script>
+    <!-- Isotope -->
+    <script src="./js/isotope.pkgd.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function () {
+            // init Isotope
+            var $projects = $('.projects').isotope({
+                itemSelector: '.project',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function () {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
+                return false;
+            });
+        });
+    </script>
+    <script src="style.css"></script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+          var header = document.querySelector("header");
+          header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    
+    <script src="app.js"></script>  
+  </body>
+</html>
