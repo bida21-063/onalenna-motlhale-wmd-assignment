@@ -1,0 +1,186 @@
+
+
+/*---------------------------
+CONTACT
+----------------*/
+html{
+    background-image: url(../bg.jpg);
+    height:900px;
+    width: 100%;
+    background-attachment: fixed;
+
+
+}
+.holder{
+    position: relative;
+    width: 75%;
+    text-align: center;
+    left: 12%;
+    top: 6rem;
+    height: 120vh;
+
+  }
+  .holder h1{
+    font-size: 34px;
+    color: #ffffff;
+  }
+  .holder h1 span{
+    color: rgb(1, 167, 9);
+  }
+  p{
+    color: #cacaca;
+  }
+  h2{
+    color: rgb(223, 227, 231);
+  }
+  .empty{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+
+    background: rgba(146, 146, 146, 0.24);
+    box-shadow: -1px -6px 20px rgba(20, 18, 18, 0.733),
+    10px 64px 55px rgba(0, 0, 0, 0.548),
+    1px 6px 100px rgba(0, 0, 0, 0.603);
+    backdrop-filter: blur(10px);
+    z-index: -1;
+  }
+  .contents p{ 
+    position: relative;
+    width: 420px;
+    left: 300px;
+    font-size: 20px;
+    font-weight: 400px;
+    color: #69d380;
+  }
+  .holder .case{
+    display: flex;
+    min-width: 110vh;
+    position: relative;
+    bottom: 80px;
+  }
+  .holder .case section{
+    margin-top: 6vh;
+    margin-left: 20vh;
+  }
+  .case .contact-form{
+    margin-top: 7rem;
+  }
+  .holder section i{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: rgba(52, 141, 10, 0.87);
+    text-align: center;
+    font-size: 24px;
+  }
+  
+   .form{
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    margin-left: 40%;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+  }
+  .form .contact-form input{
+    background-color: transparent;
+    border: 0;
+    border: transparent;
+    width: 30rem;
+    margin: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 2px solid #fff;  
+  }
+  .form .contact-form input ~ span{
+    position: absolute;
+    left: 20px;
+    transition: .9s ease-in-out;
+    margin-top: 10px;
+    color: rgb(143, 194, 128);
+  }
+  .form .contact-form input:focus ~ span{
+    transform: translateY(-20px);
+    pointer-events: none;
+  }
+  .form .contact-form textarea{
+    border: 0;
+    width: 30rem;
+    background-color: transparent;
+    margin: 20px;
+    font-size: 17px;
+    border-bottom: 2px solid #fff;
+  }
+  .form .contact-form textarea ~ span{
+    position: absolute;
+    left: 20px;
+    margin-top: 10px;
+    transition: .9s ease-in-out;
+  }
+  .form .contact-form textarea:focus ~ span{
+    transform: translateY(-20px);
+    pointer-events: none;
+  }
+  .form .contact-form input[type=submit]{
+    background-color: rgba(82, 216, 21, 0.87);
+    backdrop-filter: blur(12px);
+    border: 2px solid rgb(77, 77, 77);
+    font-size: 18px;
+    width: 50%;
+    height: 40px;
+    margin-top: -5px;
+    color: #fff;
+  }
+  .form .contact-form input[type=submit]:hover{
+    background-color: rgba(66, 66, 66, 0.226);
+    color: rgba(82, 216, 21, 0.87);
+    backdrop-filter: blur(10px);
+  }
+  .media{
+    position: absolute;
+    top: 85vh;
+    right: 20vh;
+    display: flex;
+    list-style: none;
+  }
+  .media li{
+    margin: 20px 30px;
+  }
+  
+  @media screen and (max-width: 900px){
+    .holder{
+      position: absolute;
+      top: 20%;
+      left: 0;
+      width: 100%;
+    }
+    .empty{
+      height: 200vh;
+    }
+    .form{
+      position: absolute;
+      top: 100vh;
+      margin-left: 10%;
+    }
+    .content-form{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 0;
+      margin-top: 53vh;
+      margin-left: 10vh;
+    }
+    .content section{
+      margin-top: 0vh;
+      margin-left: 0vh;
+    }
+    .media{
+      position: absolute;
+      top: 190vh;
+      right: 30px;
+    }
+  }
